@@ -1,10 +1,11 @@
 import argparse
 import numpy as np
-
 import tracker
 from AIDetector_pytorch import Detector
 import imutils
 import cv2
+import os
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
 
 def main(args):

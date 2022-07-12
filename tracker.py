@@ -106,12 +106,16 @@ def search_label(center_x, center_y, bboxes_xyxy, max_dist_threshold):
                 label = lbl
                 pass
             else:
-                # 若不是第一次，则距离小的优先
-                if avg_dist < min_dist:
-                    min_dist = avg_dist
-                    # label
-                    label = lbl
-                pass
+                if (label == "motorcycle"):
+                    label == "motorcycle"
+                    pass
+                else:
+                    # 若不是第一次，则距离小的优先
+                    if avg_dist < min_dist:
+                        min_dist = avg_dist
+                        # label
+                        label = lbl
+                    pass
             pass
         pass
 
